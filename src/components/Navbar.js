@@ -27,23 +27,25 @@ export const NavigationBar = () => {
   }
 
   return (
-    <Navbar expand="lg" className="bg-primary">
+    <Navbar expand="lg" className={scrolled? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="" width={"80"} />
+          <img src={logo} alt="Logo" width={"70"} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink => 'home' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#Skills" className={activeLink => 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#Projects" className={activeLink => 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="basic-navbar-nav" className="">
+          <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
+            <Nav.Link href="#Skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            <Nav.Link href="#Projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navBarLogo1} alt="A" width={'30'}/></a>
-              <a href="#"><img src={navBarLogo2} alt="B" width={'30'}/></a>
-              <a href="#"><img src={navBarlogo3} alt="C" width={'30'}/></a>
+              <a href="#"><img src={navBarLogo1} alt="A" /></a>
+              <a href="#"><img src={navBarLogo2} alt="B" /></a>
+              <a href="#"><img src={navBarlogo3} alt="C" /></a>
             </div>
             <button className="vvd" onClick={()=> console.log('connect')}><span>Let's Connect</span></button>
           </span>

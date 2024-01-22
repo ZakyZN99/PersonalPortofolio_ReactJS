@@ -1,5 +1,7 @@
 import "./App.css";
+import { Home } from "./components/Home";
 import { NavigationBar } from "./components/Navbar";
+import { Skills } from "./components/Skills";
 
 function App() {
   return (
@@ -9,7 +11,8 @@ function App() {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
       <NavigationBar></NavigationBar>
-
+      <Home></Home>
+      <Skills></Skills>
 
 
       <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>

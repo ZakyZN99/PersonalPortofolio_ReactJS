@@ -3,11 +3,20 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../img/Logo.svg";
 import navBarLogo1 from '../img/Linkedin.svg';
 import navBarLogo2 from '../img/Whatsapp.svg';
-import navBarlogo3 from '../img/Instagram.svg';
 
 export const NavigationBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+
+  const linkedIn = () =>{
+    window.open("https://www.linkedin.com/in/zaky-zamani-011890275/",'_blank', 'noopener, noreferrer')
+  }
+  const waLink = () =>{
+    window.open("http://wa.me/628563734618",'_blank', 'noopener, noreferrer')
+  }
+  const letsConnect = () =>{
+    window.open("mailto:zakyzamani.jobs@gmail.com?subject=Subject&body=Body%20goes%20here")
+  }
 
   useEffect(()=>{
     const onscroll = () =>{
@@ -43,11 +52,10 @@ export const NavigationBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navBarLogo1} alt="A" /></a>
-              <a href="#"><img src={navBarLogo2} alt="B" /></a>
-              <a href="#"><img src={navBarlogo3} alt="C" /></a>
+              <a onClick={linkedIn}><img src={navBarLogo1} alt="Linkedin" /></a>
+              <a onClick={waLink}><img src={navBarLogo2} alt="WA" /></a>
             </div>
-            <button className="vvd" onClick={()=> console.log('connect')}><span>Let's Connect</span></button>
+            <button className="vvd" onClick={letsConnect}><span>Let's Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>

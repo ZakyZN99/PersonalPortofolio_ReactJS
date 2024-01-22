@@ -11,73 +11,96 @@ import MySQLLogo from "../img/MySQL.svg";
 import GitHubLogo from "../img/GitHub.svg";
 import RestAPILogo from "../img/RestAPI.svg";
 import PostmanLogo from "../img/Postman.svg";
+import { Col, Row } from "react-bootstrap";
 
 export const Skills = () => {
   return (
     <section className="skills" id="skills">
-      <div className="Container">
-        <div>
+        <div className="skills-header">
           <h1 className="h1-custom">SKILLS</h1>
           <h2 className="h2-custom">Software Used</h2>
         </div>
-        <div className="row">
-          <div className="col">
+      <div className="table-container">
+        <Row >
+          <Col md={{span: 2, offset:2}}>
             <div className="container">
               <img src={flutterLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Flutter</h3>
             </div>
-            <div className="container">
-              <img src={AndroidStudio} alt="LOGO" height={100} />
-              <h3 className="h2-custom">Android Studio</h3>
-            </div>
-            <div className="container">
-              <img src={MySQLLogo} alt="LOGO" height={100} />
-              <h3 className="h2-custom">MySQL</h3>
-            </div>
-          </div>
-          <div className="col">
+          </Col>
+          <Col md={{span: 2}}>
             <div className="container">
               <img src={figmaLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Figma</h3>
             </div>
-            <div className="container">
-              <img src={Arduino} alt="LOGO" height={100} />
-              <h3 className="h2-custom">Arduino</h3>
-            </div>
-            <div className="container">
-              <img src={GitHubLogo} alt="LOGO" height={100} />
-              <h3 className="h2-custom">GitHub</h3>
-            </div>
-          </div>
-          <div className="col">
-            <div className="container">
-              <img src={VSCodeLogo} alt="LOGO" height={100} />
-              <h3 className="h2-custom">VS Code</h3>
-            </div>
-            <div className="container">
-              <img src={RaspPILogo} alt="LOGO" height={100} />
-              <h3 className="h2-custom">Raspberry PI</h3>
-            </div>
-            <div className="container">
-              <img src={RestAPILogo} alt="LOGO" height={100} />
-              <h3 className="h2-custom">Rest API</h3>
-            </div>
-          </div>
-          <div className="col">
+          </Col>
+          <Col md={{span: 2}}>
             <div className="container">
               <img src={PythonLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Python</h3>
             </div>
+          </Col>
+          <Col md={{span: 2}}>
             <div className="container">
+              <img src={VSCodeLogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">VS Code</h3>
+            </div>
+          </Col>
+        </Row>
+
+        <Row >
+          <Col md={{span: 2, offset:2}}>
+            <div className="container">
+              <img src={AndroidStudio} alt="LOGO" height={100} />
+              <h3 className="h2-custom">Android Studio</h3>
+            </div>
+          </Col>
+          <Col md={{span: 2}}>
+          <div className="container">
+              <img src={Arduino} alt="LOGO" height={100} />
+              <h3 className="h2-custom">Arduino</h3>
+            </div>
+          </Col>
+          <Col md={{span: 2}}>
+          <div className="container">
+              <img src={GitHubLogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">GitHub</h3>
+            </div>
+          </Col>
+          <Col md={{span: 2}}>
+          <div className="container">
               <img src={DartLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Dart</h3>
             </div>
-            <div className="container">
+          </Col>
+        </Row>
+
+        <Row>
+          <Col md={{span: 2, offset:2}}>
+          <div className="container">
+              <img src={MySQLLogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">MySQL</h3>
+            </div>
+          </Col>
+          <Col md={{span: 2}}>
+          <div className="container">
               <img src={PostmanLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Postman</h3>
             </div>
-          </div>
-        </div>
+          </Col>
+          <Col md={{span: 2}}>
+          <div className="container">
+              <img src={RaspPILogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">Raspberry PI</h3>
+            </div>
+          </Col>
+          <Col md={{span: 2}}>
+          <div className="container">
+              <img src={RestAPILogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">Rest API</h3>
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

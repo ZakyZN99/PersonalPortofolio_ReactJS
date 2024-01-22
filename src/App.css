@@ -287,3 +287,11 @@ nav.navbar .navbar-toggler[arial-expanded="true"] .navbar-toggler-icon{
 .skills{
   padding-top: 30px;
 }
+.skills-header{
+  padding-bottom: 50px;
+}
+.table-container{
+  display: grid;
+  gap: 40px;
+  padding-bottom: 60px;
+}

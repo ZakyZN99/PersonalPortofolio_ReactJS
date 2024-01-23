@@ -12,24 +12,23 @@ import GitHubLogo from "../img/GitHub.svg";
 import RestAPILogo from "../img/RestAPI.svg";
 import PostmanLogo from "../img/Postman.svg";
 import { Col, Row } from "react-bootstrap";
-import { motion } from "framer-motion";
+import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
   return (
     <section className="skills" id="skills">
-      <div className="skills-header">
+    <TrackVisibility>
+      {({ isVisible }) =>(
+        <div className={ isVisible ? "animate__animated animate__fadeInUp  skills-header" : " "}>
         <h1 className="h1-custom">SKILLS</h1>
         <h2 className="h2-custom">Software Used</h2>
       </div>
-      <motion.div
-        className="table-container"
-        animate={{ y: 100 }}
-        transition={{
-          ease: "linear",
-          duration: 2,
-          x: { duration: 1 },
-        }}
-      >
+      )}
+      </TrackVisibility>
+      <div className="table-container" >
+        <TrackVisibility>
+        {({ isVisible }) =>(
+          <div className={ isVisible ? "animate__animated animate__flipInX " : ""}>
         <Row>
           <Col md={{ span: 2, offset: 2 }}>
             <div>
@@ -56,7 +55,13 @@ export const Skills = () => {
             </div>
           </Col>
         </Row>
-
+        </div>
+        )}
+        </TrackVisibility>
+        
+        <TrackVisibility>
+        {({ isVisible }) =>(
+          <div className={ isVisible ? "animate__animated animate__flipInX " : ""}>
         <Row>
           <Col md={{ span: 2, offset: 2 }}>
             <div className="container">
@@ -83,7 +88,13 @@ export const Skills = () => {
             </div>
           </Col>
         </Row>
+        </div>
+        )}
+        </TrackVisibility>
 
+        <TrackVisibility>
+        {({ isVisible }) =>(
+          <div className={ isVisible ? "animate__animated animate__flipInX " : ""}>
         <Row>
           <Col md={{ span: 2, offset: 2 }}>
             <div className="container">
@@ -110,7 +121,10 @@ export const Skills = () => {
             </div>
           </Col>
         </Row>
-      </motion.div>
+        </div>
+        )}
+        </TrackVisibility>
+      </div>
     </section>
   );
 };

@@ -1,4 +1,5 @@
 import "./App.css";
+import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
 import { NavigationBar } from "./components/Navbar";
@@ -13,16 +14,18 @@ function App() {
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    
     <main className="App">
       <NavigationBar/>
       <Home/>
       <Skills/>
       <Projects/>
+      <Contact/>      
       <Footer/>
    
     </main>
      {/* <ScrollUp/> */}
-    
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
       <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossorigin ></script>
       <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>

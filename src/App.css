@@ -441,7 +441,7 @@ transition: 0.3s ease-in-out;
 /* FOOTER */
 .footer{
   padding: 20px 0 10px 0;
-  background-color: #222222;
+  background-color: #101010;
 }
 .fsocial-icon{
   display: inline-block;
@@ -532,4 +532,66 @@ transition: 0.3s ease-in-out;
 }
 .show-scroll{
   bottom: 3rem;
+}
+/* CONTACT */
+.contact{
+  margin: 0;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-image: url("../src/img/skills-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.csocial-icon{
+  display: flex;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+.csocial-icon a {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-bg-color);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items:center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid white;
+}
+.csocial-icon h5{
+  padding-top: 15px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.csocial-icon a::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: var(--primary-text-color);
+  display: inline-flex;
+  border-radius: 60%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.csocial-icon a:hover::before{
+  transform: scale(1);
+}
+.csocial-icon a img{
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.csocial-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) ;
+}
+.contact-card{
+  padding-top: 80px;
+}
+.contact-img{
+  width: 450px;
+  justify-content: center;
+  align-items: center;
 }

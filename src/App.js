@@ -1,6 +1,7 @@
 import "./App.css";
 import { Home } from "./components/Home";
 import { NavigationBar } from "./components/Navbar";
+import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <NavigationBar></NavigationBar>
       <Home></Home>
       <Skills></Skills>
+      <Projects></Projects>
 
 
       <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>

@@ -12,35 +12,44 @@ import GitHubLogo from "../img/GitHub.svg";
 import RestAPILogo from "../img/RestAPI.svg";
 import PostmanLogo from "../img/Postman.svg";
 import { Col, Row } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 export const Skills = () => {
   return (
     <section className="skills" id="skills">
-        <div className="skills-header">
-          <h1 className="h1-custom">SKILLS</h1>
-          <h2 className="h2-custom">Software Used</h2>
-        </div>
-      <div className="table-container">
-        <Row >
-          <Col md={{span: 2, offset:2}}>
-            <div className="container">
+      <div className="skills-header">
+        <h1 className="h1-custom">SKILLS</h1>
+        <h2 className="h2-custom">Software Used</h2>
+      </div>
+      <motion.div
+        className="table-container"
+        animate={{ y: 100 }}
+        transition={{
+          ease: "linear",
+          duration: 2,
+          x: { duration: 1 },
+        }}
+      >
+        <Row>
+          <Col md={{ span: 2, offset: 2 }}>
+            <div>
               <img src={flutterLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Flutter</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
+          <Col md={{ span: 2 }}>
             <div className="container">
               <img src={figmaLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Figma</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
+          <Col md={{ span: 2 }}>
             <div className="container">
               <img src={PythonLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Python</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
+          <Col md={{ span: 2 }}>
             <div className="container">
               <img src={VSCodeLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">VS Code</h3>
@@ -48,27 +57,27 @@ export const Skills = () => {
           </Col>
         </Row>
 
-        <Row >
-          <Col md={{span: 2, offset:2}}>
+        <Row>
+          <Col md={{ span: 2, offset: 2 }}>
             <div className="container">
               <img src={AndroidStudio} alt="LOGO" height={100} />
               <h3 className="h2-custom">Android Studio</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
-          <div className="container">
+          <Col md={{ span: 2 }}>
+            <div className="container">
               <img src={Arduino} alt="LOGO" height={100} />
               <h3 className="h2-custom">Arduino</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
-          <div className="container">
+          <Col md={{ span: 2 }}>
+            <div className="container">
               <img src={GitHubLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">GitHub</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
-          <div className="container">
+          <Col md={{ span: 2 }}>
+            <div className="container">
               <img src={DartLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Dart</h3>
             </div>
@@ -76,32 +85,32 @@ export const Skills = () => {
         </Row>
 
         <Row>
-          <Col md={{span: 2, offset:2}}>
-          <div className="container">
+          <Col md={{ span: 2, offset: 2 }}>
+            <div className="container">
               <img src={MySQLLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">MySQL</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
-          <div className="container">
+          <Col md={{ span: 2 }}>
+            <div className="container">
               <img src={PostmanLogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Postman</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
-          <div className="container">
+          <Col md={{ span: 2 }}>
+            <div className="container">
               <img src={RaspPILogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Raspberry PI</h3>
             </div>
           </Col>
-          <Col md={{span: 2}}>
-          <div className="container">
+          <Col md={{ span: 2 }}>
+            <div className="container">
               <img src={RestAPILogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Rest API</h3>
             </div>
           </Col>
         </Row>
-      </div>
+      </motion.div>
     </section>
   );
 };

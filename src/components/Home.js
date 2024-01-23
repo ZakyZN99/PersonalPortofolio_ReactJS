@@ -60,7 +60,7 @@ export const Home = () => {
 
           </div>
 
-          <div className="col-md-3 offset-md-0">
+          <div className="col-md-3 offset-md-0 img-profile">
             <img src={profile} width={400}></img>
           </div>
         </div>

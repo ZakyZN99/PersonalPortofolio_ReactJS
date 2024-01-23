@@ -55,6 +55,7 @@ body{
 
 .App-logo {
   height: 40vmin;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -66,6 +67,7 @@ body{
 
 .App-header {
   background-color: #10101010;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -243,6 +245,18 @@ nav.navbar .navbar-toggler[arial-expanded="true"] .navbar-toggler-icon{
   background-position: top center;
   padding: 195px 0 100px 0;
 }
+.img-profile{
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0%{
+    transform: translateY(-20px);
+  }50%{
+    transform: translateY(20px);
+  }100%{
+    transform: translateY(-20px);
+  }
+}
 .home-content{
   padding-top: 80px;
   text-align: justify;
@@ -285,13 +299,79 @@ nav.navbar .navbar-toggler[arial-expanded="true"] .navbar-toggler-icon{
 }
 
 .skills{
-  padding-top: 30px;
+  padding-top: 100px;
 }
 .skills-header{
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 .table-container{
   display: grid;
   gap: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
+}
+.projects{
+  padding-top: 100px;
+  display: grid;
+}
+
+.projects .nav.nav-pills{
+  width: 50%;
+  padding-top: 50px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: #101010;
+  overflow: hidden;
+}
+.projects .nav.nav-pills .nav-item{
+  width: 33.3333%;
+}
+.projects .nav.nav-pills .nav-link{
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #ffff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.projects .nav.nav-pills .nav-link::before{
+position: absolute;
+content: "";
+width: 0;
+height: 100%;
+background: radial-gradient(circle, rgba(37,101,156,1) 1%, rgba(89,80,80,1) 100%);
+top: 0;
+left: 0;
+z-index: -1;
+transition: 0.3s ease-in-out;
+}
+.projects .nav.nav-pills .nav-link.active::before{
+  width: 100% !important;
+  }
+  .projects .nav.nav-pills .nav-link.active{
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+.nav-link#project-tabs-tab-mobile{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 55px 0px 0px 55px;
+}
+.nav-link#project-tabs-tab-web{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#project-tabs-tab-software{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0px 55px 55px 0px;
+}
+.proj-imgbox{
+  position: relative;
+  border-radius: 30px;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 24px;
 }

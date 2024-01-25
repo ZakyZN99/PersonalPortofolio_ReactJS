@@ -122,6 +122,7 @@ span.navbar-text{
   align-items: center;
 }
 .social-icon{
+  cursor: pointer;
   display: inline-block;
   margin-left: 14px;
 }
@@ -138,6 +139,7 @@ span.navbar-text{
   border: 1px solid white;
 }
 .social-icon a::before{
+  cursor: pointer;  
   content: "";
   width: 40px;
   height: 40px;
@@ -176,6 +178,7 @@ span.navbar-text{
 .navbar-text button::before{
   content: "";
   width: 0%;
+  cursor: pointer;
   position: absolute;
   background-color: #ffff;
   left: 0;
@@ -570,6 +573,7 @@ transition: 0.3s ease-in-out;
 .csocial-icon a::before{
   content: "";
   width: 50px;
+  cursor: pointer;
   height: 50px;
   position: absolute;
   background-color: var(--primary-text-color);

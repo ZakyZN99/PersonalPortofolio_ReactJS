@@ -531,7 +531,12 @@ transition: 0.3s ease-in-out;
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) ;
 }
 .show-scroll{
+  display: inline-block;
+  margin-right: 20px;
+  position: fixed;
+  right: 2.5rem;
   bottom: 3rem;
+  padding-bottom: 20px;
 }
 /* CONTACT */
 .contact{

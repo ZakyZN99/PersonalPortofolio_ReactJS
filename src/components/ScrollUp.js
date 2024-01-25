@@ -2,14 +2,14 @@ import scrollUp from "../img/ArrowUp.svg";
 import React from 'react';
 
 export const ScrollUp = () => {
-    window.addEventListener("scrollup", function(){
-        const sUp = document.querySelector(".scrollup-icon");
-        if( this.scrollY >=200) sUp.className.add("show-scroll");
-        else sUp.className.remove("show-scroll");
+    window.addEventListener("scrollup-icon", function(){
+        const sUp = document.querySelector("scroll");
+        if( this.scrollY >=500) sUp.className.add("scrollup-icon");
+        else sUp.className.remove("scrollup-icon");
     })
   return (
     <div className="scrollup-icon">
-      <a href="#" >
+      <a href="#home" >
         <img src={scrollUp} width={50} ></img>
       </a>
     </div>

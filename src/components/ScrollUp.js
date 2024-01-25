@@ -18,8 +18,8 @@ export const ScrollUp = () => {
       document.documentElement.scrollTop = 0;
     }
   return (
-    <div className="scrollup-icon">
-      <a href="#" >
+    <div className="scrollup-icon" id="scrollup-icon">
+      <a onClick={topPage} >
         <img src={scrollUp} width={50} ></img>
       </a>
     </div>

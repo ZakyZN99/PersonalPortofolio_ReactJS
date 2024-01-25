@@ -52,7 +52,7 @@ export const Contact = () => {
                       <a onClick={waLink}>
                         <img src={navBarLogo2} alt="Logo"></img>
                       </a>
-                      <span><h5>+628563734618</h5></span>
+                      <h5>+628563734618</h5>
                       
                     </div>
                   </ListGroup.Item>

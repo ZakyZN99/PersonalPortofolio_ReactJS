@@ -75,7 +75,7 @@ export const Projects = () => {
               {/* MOBILE PROJECTS */}
               <TabPane eventKey={"mobile"}>
                 <Row>
-                  <Col sm={6} md={1} className="offset-md-1">
+                  <Col sm={5} md={0} className="offset-md-1">
                     <Card style={{ width: "25rem" }} className="card-projects">
                       <Card.Img
                         variant="top"

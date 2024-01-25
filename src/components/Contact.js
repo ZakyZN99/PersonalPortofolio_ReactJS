@@ -26,7 +26,7 @@ export const Contact = () => {
         <Row>
             <h1 className="h1-custom ">Contact</h1>
             <h2 className="h2-custom proj-title">Get in Touch With Me</h2>
-          <Col sm={4} md={4} className="offset-md-1 b">
+          <Col sm={5} md={5} className="offset-md-1 b">
             <div className="contact-card" >
               <Card >
                 <ListGroup variant="flush">
@@ -60,7 +60,7 @@ export const Contact = () => {
               </Card>
             </div>
           </Col>
-          <Col sm={6} md={6}   className="offset-md-1">
+          <Col sm={4} md={4}   className="offset-md-1">
                 <img src={navBarLogo4} alt="LOGO" className="contact-img"/>
           </Col>
         </Row>

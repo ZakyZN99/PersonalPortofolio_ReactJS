@@ -22,9 +22,8 @@ function App() {
       <Projects/>
       <Contact/>      
       <Footer/>
-   
+      <ScrollUp/>
     </main>
-     {/* <ScrollUp/> */}
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
       <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossorigin ></script>

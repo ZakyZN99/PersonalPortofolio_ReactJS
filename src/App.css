@@ -447,6 +447,7 @@ transition: 0.3s ease-in-out;
   display: inline-block;
   margin-left: 20px;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .fsocial-icon a {
   width: 50px;
@@ -488,7 +489,8 @@ transition: 0.3s ease-in-out;
 }
 
 .scrollup-icon{
-  display: inline-block;
+  display: none;
+  cursor: pointer;
   margin-right: 20px;
   position: fixed;
   right: 2.5rem;

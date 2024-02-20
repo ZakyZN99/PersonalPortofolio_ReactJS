@@ -11,7 +11,7 @@ export const Home = () => {
   const [nameMessage, setnameMessage] = useState(["I'm Zaky Zamani Noor"]);
   const cvLink = () => {
     window.open(
-      "https://drive.google.com/file/d/1drP0ps4nBS90eY_Yj0mkDsbN8De0YJte/view?usp=sharing",
+      "https://drive.google.com/file/d/1RSdLnq8nqaSXTrwPDQZ2ZMKO0vPImEZx/view?usp=sharing",
       "_blank",
       "noopener, noreferrer"
     );

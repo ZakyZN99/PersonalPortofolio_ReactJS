@@ -11,6 +11,10 @@ import MySQLLogo from "../img/MySQL.svg";
 import GitHubLogo from "../img/GitHub.svg";
 import RestAPILogo from "../img/RestAPI.svg";
 import PostmanLogo from "../img/Postman.svg";
+import CSSLogo from "../img/css.png";
+import reactjsLogo from "../img/reactjs.png";
+import JsonLogo from "../img/json.png";
+
 import { Col, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 
@@ -118,6 +122,33 @@ export const Skills = () => {
             <div className="container">
               <img src={RestAPILogo} alt="LOGO" height={100} />
               <h3 className="h2-custom">Rest API</h3>
+            </div>
+          </Col>
+        </Row>
+        </div>
+        )}
+        </TrackVisibility>
+
+        <TrackVisibility>
+        {({ isVisible }) =>(
+          <div className={ isVisible ? "animate__animated animate__flipInX " : ""}>
+        <Row>
+          <Col md={{ span: 2, offset: 2 }}>
+            <div className="container">
+              <img src={JsonLogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">JSON</h3>
+            </div>
+          </Col>
+          <Col md={{ span: 2 }}>
+            <div className="container">
+              <img src={reactjsLogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">React JS</h3>
+            </div>
+          </Col>
+          <Col md={{ span: 2 }}>
+            <div className="container">
+              <img src={CSSLogo} alt="LOGO" height={100} />
+              <h3 className="h2-custom">CSS</h3>
             </div>
           </Col>
         </Row>

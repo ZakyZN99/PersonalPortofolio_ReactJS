@@ -14,6 +14,7 @@ import PostmanLogo from "../img/Postman.svg";
 import CSSLogo from "../img/css.png";
 import reactjsLogo from "../img/reactjs.png";
 import JsonLogo from "../img/json.png";
+import Javascript from "../img/JavaScriptlogo.png";
 
 import { Col, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
@@ -151,6 +152,13 @@ export const Skills = () => {
               <h3 className="h2-custom">CSS</h3>
             </div>
           </Col>
+          <Col md={{ span: 2 }}>
+            <div className="container">
+              <img src={Javascript} alt="LOGO" height={100} />
+              <h3 className="h2-custom">Javascript</h3>
+            </div>
+          </Col>
+          
         </Row>
         </div>
         )}

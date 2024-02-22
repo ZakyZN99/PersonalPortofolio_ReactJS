@@ -2,6 +2,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import navBarLogo1 from '../img/Linkedin.svg';
 import navBarLogo2 from '../img/Whatsapp.svg';
 import navBarLogo3 from '../img/Email.svg';
+import navBarLogo4 from '../img/GitHubIcon.svg';
+
 
 export const Footer = () => {
     const linkedIn = () =>{
@@ -13,6 +15,9 @@ export const Footer = () => {
       const letsConnect = () =>{
         window.open("mailto:zakyzamani.jobs@gmail.com?subject=Subject&body=Body%20goes%20here")
       }
+      const gitHub = () =>{
+        window.open("https://github.com/ZakyZN99?tab=repositories",'_blank', 'noopener, noreferrer')
+      }
   return (
       <Row className="align-item-center footer">
         <Col className="g-3">
@@ -22,6 +27,9 @@ export const Footer = () => {
             </a>
             <a onClick={linkedIn}>
               <img src={navBarLogo1} alt="Logo"></img>
+            </a>
+            <a onClick={gitHub}>
+              <img src={navBarLogo4} alt="Logo"></img>
             </a>
             <a onClick={waLink}>
               <img src={navBarLogo2} alt="Logo"></img>

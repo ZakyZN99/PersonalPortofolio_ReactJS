@@ -12,6 +12,7 @@ import {
 import Sinanas from "../img/sinanas.svg";
 import Sifirings from "../img/Sifirings.svg";
 import MMImage from "../img/multilanguage.png";
+import newsAPI from "../img/newsapi.png";
 import DT from "../img/DiseaseTrack.svg";
 import TrackVisibility from "react-on-screen";
 import { isVisible } from "@testing-library/user-event/dist/utils";
@@ -56,7 +57,13 @@ export const Projects = () => {
         "noopener, noreferrer"
       );
     };
-
+    const NewsAPIGit = () => {
+      window.open(
+        "https://github.com/ZakyZN99/ReactJSNewsAPI_FunctionComponent",
+        "_blank",
+        "noopener, noreferrer"
+      );
+    };
 
   return (
     <section className="projects" id="projects">
@@ -156,12 +163,45 @@ export const Projects = () => {
                             convert it into PDF file using React JS.
                             <br />
                             <br />
-                            <span>Tools: React JS, CSS, Visual Studio Code, JSON</span>
+                            <span>Tools: React JS, CSS, Javascript, Visual Studio Code, JSON</span>
                           </Card.Text>
                           <div className="row-md-2">
                             <button
                               className="button-text1"
                               onClick={Multilanguage}
+                            >
+                              GitHub
+                            </button>
+                          </div>
+                        </Card.Body>
+                      </Card>
+                      {/* PROJECT 2 */}
+                      <Card
+                        style={{ width: "25rem" }}
+                        className="card-projects"
+                      >
+                        <Card.Img
+                          variant="top"
+                          src={newsAPI}
+                          height={300}
+                          className="cards-img"
+                        />
+                        <Card.Body>
+                          <Card.Title>
+                            <h4 className="card-title">
+                              News API Website
+                            </h4>
+                          </Card.Title>
+                          <Card.Text>
+                            News API website is a website created to display news whose data is retrieved using JSON from NewsAPI. 
+                            <br />
+                            <br />
+                            <span>Tools: React JS, CSS, Visual Studio Code, JSON</span>
+                          </Card.Text>
+                          <div className="row-md-2">
+                            <button
+                              className="button-text1"
+                              onClick={NewsAPIGit}
                             >
                               GitHub
                             </button>

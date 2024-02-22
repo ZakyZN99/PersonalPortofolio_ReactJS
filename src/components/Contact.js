@@ -3,6 +3,8 @@ import navBarLogo1 from "../img/Linkedin.svg";
 import navBarLogo2 from "../img/Whatsapp.svg";
 import navBarLogo3 from "../img/Email.svg";
 import navBarLogo4 from "../img/contactme.svg";
+import navBarLogo5 from '../img/GitHubIcon.svg';
+
 
 export const Contact = () => {
   const linkedIn = () => {
@@ -20,6 +22,10 @@ export const Contact = () => {
       "mailto:zakyzamani.jobs@gmail.com?subject=Subject&body=Body%20goes%20here"
     );
   };
+  const gitHub = () =>{
+    window.open("https://github.com/ZakyZN99?tab=repositories",'_blank', 'noopener, noreferrer')
+  }
+
   return (
     <section className="contact" id="contact">
       <Container>
@@ -45,6 +51,14 @@ export const Contact = () => {
                         <img src={navBarLogo1} alt="Logo"></img>
                       </a>
                       <h5>Zaky Zamani</h5>
+                    </div>
+                  </ListGroup.Item>
+                  <ListGroup.Item action onClick={gitHub} className="bg-dark">
+                    <div className="csocial-icon w">
+                      <a onClick={gitHub}>
+                        <img src={navBarLogo5} alt="Logo"></img>
+                      </a>
+                      <h5>ZakyZN99</h5>
                     </div>
                   </ListGroup.Item>
                   <ListGroup.Item action onClick={waLink} className="bg-dark">

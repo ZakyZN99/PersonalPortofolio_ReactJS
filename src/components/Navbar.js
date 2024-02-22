@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../img/Logo.svg";
 import navBarLogo1 from '../img/Linkedin.svg';
 import navBarLogo2 from '../img/Whatsapp.svg';
+import navBarLogo3 from '../img/GitHubIcon.svg';
 
 export const NavigationBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -10,6 +11,9 @@ export const NavigationBar = () => {
 
   const linkedIn = () =>{
     window.open("https://www.linkedin.com/in/zaky-zamani-011890275/",'_blank', 'noopener, noreferrer')
+  }
+  const gitHub = () =>{
+    window.open("https://github.com/ZakyZN99?tab=repositories",'_blank', 'noopener, noreferrer')
   }
   const waLink = () =>{
     window.open("http://wa.me/628563734618",'_blank', 'noopener, noreferrer')
@@ -54,6 +58,7 @@ export const NavigationBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a onClick={linkedIn}><img src={navBarLogo1} alt="Linkedin" /></a>
+              <a onClick={gitHub}><img src={navBarLogo3} alt="Github" /></a>
               <a onClick={waLink}><img src={navBarLogo2} alt="WA" /></a>
             </div>
             <button className="vvd" onClick={letsConnect}><span>Let's Connect</span></button>

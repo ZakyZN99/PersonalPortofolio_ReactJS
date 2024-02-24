@@ -11,7 +11,7 @@ export const Home = () => {
   const [nameMessage, setnameMessage] = useState(["I'm Zaky Zamani Noor"]);
   const cvLink = () => {
     window.open(
-      "https://drive.google.com/file/d/1RSdLnq8nqaSXTrwPDQZ2ZMKO0vPImEZx/view?usp=sharing",
+      "https://drive.google.com/file/d/1f4hx6GD0k9rVgK6bQVH1QvDKq9WoaaLp/view?usp=sharing",
       "_blank",
       "noopener, noreferrer"
     );
@@ -61,26 +61,29 @@ export const Home = () => {
                     Application Development, and Software Development. Explored
                     roles as a Mobile Developer, Web Developer, and Software
                     Developer, successfully completing various development
-                    projects. Interest in contributing to mobile application
-                    development, web development, and software development.
+                    projects with Flutter, React JS, Figma, MySQL and Arduino.
+                    Interest in contributing to mobile application development,
+                    web development, and software development.
                   </h3>
                 </div>
               )}
             </TrackVisibility>
             <TrackVisibility>
-            {({ isVisible }) => (
-              <div
-                className={
-                  isVisible ? "animate__animated animate__rollIn  row-md-4" : ""
-                }
-              >
-                <button className="button-text" onClick={hireMe}>
-                  <span>HIRE ME</span>
-                </button>
-                <button className="button-text" onClick={cvLink}>
-                  Download CV
-                </button>
-              </div>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible
+                      ? "animate__animated animate__rollIn  row-md-4"
+                      : ""
+                  }
+                >
+                  <button className="button-text" onClick={hireMe}>
+                    <span>HIRE ME</span>
+                  </button>
+                  <button className="button-text" onClick={cvLink}>
+                    Download CV
+                  </button>
+                </div>
               )}
             </TrackVisibility>
           </div>

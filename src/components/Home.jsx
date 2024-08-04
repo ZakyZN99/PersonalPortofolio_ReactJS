@@ -4,23 +4,13 @@ import { Typewriter } from "react-simple-typewriter";
 import profile from "../img/Profile.svg";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
-import { isVisible } from "@testing-library/user-event/dist/utils";
+import link from "../utils/link";
 
 export const Home = () => {
   const [greetMsg, setgreetMsg] = useState(["Hello,"]);
   const [nameMessage, setnameMessage] = useState(["I'm Zaky Zamani Noor"]);
-  const cvLink = () => {
-    window.open(
-      "https://drive.google.com/file/d/1f4hx6GD0k9rVgK6bQVH1QvDKq9WoaaLp/view?usp=sharing",
-      "_blank",
-      "noopener, noreferrer"
-    );
-  };
-  const hireMe = () => {
-    window.open(
-      "mailto:zakyzamani.jobs@gmail.com?subject=Subject&body=Body%20goes%20here"
-    );
-  };
+  const {cvLink, emailLink} =link()
+
 
   return (
     <section className="home" id="home">
@@ -77,10 +67,10 @@ export const Home = () => {
                       : ""
                   }
                 >
-                  <button className="button-text" onClick={hireMe}>
+                  <button className="button-text" onClick={()=> emailLink()}>
                     <span>HIRE ME</span>
                   </button>
-                  <button className="button-text" onClick={cvLink}>
+                  <button className="button-text" onClick={()=> cvLink()}>
                     Download CV
                   </button>
                 </div>

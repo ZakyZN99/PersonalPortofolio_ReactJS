@@ -85,19 +85,19 @@ export const Projects = () => {
               id="pills-tab"
             >
               <Nav.Item>
-                <Nav.Link eventKey={"mobile"}>Mobile Projects</Nav.Link>
+                <Nav.Link eventKey={"mobile"}>Mobile</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey={"web"}>Web Projects</Nav.Link>
+                <Nav.Link eventKey={"web"}>Website</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey={"software"}>Software Projects</Nav.Link>
+                <Nav.Link eventKey={"software"}>Software</Nav.Link>
               </Nav.Item>
             </Nav>
             <TabContent>
               {/* MOBILE PROJECTS */}
               <TabPane eventKey={"mobile"}>
-                <Row>
+                <Row className="px-4">
                   <Col xs={10} md={6} lg={3} className="mb-4">
                     <Card className="card-projects">
                       <Card.Img

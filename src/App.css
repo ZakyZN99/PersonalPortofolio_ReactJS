@@ -334,7 +334,7 @@ nav.navbar .navbar-toggler[arial-expanded="true"] .navbar-toggler-icon{
 }
 
 .projects .nav.nav-pills{
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: #101010;
@@ -387,7 +387,7 @@ transition: 0.3s ease-in-out;
   border-bottom: 0px 55px 55px 0px;
 }
 .card-group{
-  gap: 10px;
+  gap: 5px;
   width: 50rem;
 }
 .card-projects{
@@ -401,7 +401,7 @@ transition: 0.3s ease-in-out;
   align-self: center;
 }
 .cards-img{
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .button-text1 {

@@ -4,28 +4,11 @@ import navBarLogo2 from "../img/Whatsapp.svg";
 import navBarLogo3 from "../img/Email.svg";
 import navBarLogo4 from "../img/contactme.svg";
 import navBarLogo5 from '../img/GitHubIcon.svg';
+import link from "../utils/link";
 
 
 export const Contact = () => {
-  const linkedIn = () => {
-    window.open(
-      "https://www.linkedin.com/in/zaky-zamani-011890275/",
-      "_blank",
-      "noopener, noreferrer"
-    );
-  };
-  const waLink = () => {
-    window.open("http://wa.me/628563734618", "_blank", "noopener, noreferrer");
-  };
-  const letsConnect = () => {
-    window.open(
-      "mailto:zakyzamani.jobs@gmail.com?subject=Subject&body=Body%20goes%20here"
-    );
-  };
-  const gitHub = () =>{
-    window.open("https://github.com/ZakyZN99?tab=repositories",'_blank', 'noopener, noreferrer')
-  }
-
+  const {linkedInLink, waLink, emailLink, gitHubLink} = link()
   return (
     <section className="contact" id="contact">
       <Container>
@@ -36,34 +19,34 @@ export const Contact = () => {
             <div className="contact-card" >
               <Card >
                 <ListGroup variant="flush">
-                  <ListGroup.Item action onClick={letsConnect} className="bg-dark" >
+                  <ListGroup.Item action onClick={()=>emailLink()} className="bg-dark" >
                     <div className="csocial-icon w">
-                      <a onClick={letsConnect}>
+                      <a onClick={()=>emailLink()}>
                         <img src={navBarLogo3} alt="Logo"></img>
                       </a>
                       <h5>zakyzamani.jobs@gmail.com</h5>
                     </div>
                     
                   </ListGroup.Item>
-                  <ListGroup.Item action onClick={linkedIn} className="bg-dark">
+                  <ListGroup.Item action onClick={()=>linkedInLink()} className="bg-dark">
                     <div className="csocial-icon w">
-                      <a onClick={linkedIn}>
+                      <a onClick={()=>linkedInLink()}>
                         <img src={navBarLogo1} alt="Logo"></img>
                       </a>
                       <h5>Zaky Zamani</h5>
                     </div>
                   </ListGroup.Item>
-                  <ListGroup.Item action onClick={gitHub} className="bg-dark">
+                  <ListGroup.Item action onClick={()=>gitHubLink()} className="bg-dark">
                     <div className="csocial-icon w">
-                      <a onClick={gitHub}>
+                      <a onClick={()=>gitHubLink()}>
                         <img src={navBarLogo5} alt="Logo"></img>
                       </a>
                       <h5>ZakyZN99</h5>
                     </div>
                   </ListGroup.Item>
-                  <ListGroup.Item action onClick={waLink} className="bg-dark">
+                  <ListGroup.Item action onClick={()=>waLink()} className="bg-dark">
                     <div className="csocial-icon w">
-                      <a onClick={waLink}>
+                      <a onClick={()=>waLink()}>
                         <img src={navBarLogo2} alt="Logo"></img>
                       </a>
                       <h5>+628563734618</h5>

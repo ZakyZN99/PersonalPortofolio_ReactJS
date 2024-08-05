@@ -2,8 +2,6 @@ import scrollUp from "../img/ArrowUp.svg";
 import React from 'react';
 
 export const ScrollUp = () => {
-
-  //let scrollUpIcon = ;
   
     window.onscroll = function(){
         if( document.body.scrollTop >100 || document.documentElement.scrollTop > 100 ) {

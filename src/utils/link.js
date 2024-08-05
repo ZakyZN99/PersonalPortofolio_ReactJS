@@ -23,6 +23,64 @@ const link = () => {
         );
     };
 
+    const DTfigmaLink = () => {
+        window.open(
+            "https://www.figma.com/file/yrVgpTCSNx5YfojuhctzkD/Untitled?type=design&node-id=0%3A1&mode=design&t=J4VxVVVXY4FtNS62-1",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+    const DTgithubLink = () => {
+        window.open(
+            "https://github.com/ZakyZN99/DiseaseTracker/",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+
+    const SIFIRINGSgithubLink = () => {
+        window.open(
+            "https://github.com/ZakyZN99/SIFIRINGS",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+    const Multilanguage = () => {
+        window.open(
+            "https://github.com/ZakyZN99/ReactJSMultilanguageAndPDF",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+    const NewsAPIGit = () => {
+        window.open(
+            "https://github.com/ZakyZN99/ReactJSNewsAPI_FunctionComponent",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+    const CravePizze = () => {
+        window.open(
+            "https://github.com/ZakyZN99/foodstore",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+    const SINANASCertif = () => {
+        window.open(
+            "https://drive.google.com/file/d/13Q64o0AeTLx81l2xSm94yB7aj_xzqLfy/view?usp=sharing",
+            "_blank",
+            "noopener, noreferrer"
+        );
+    };
+
+
 
 
     return {
@@ -30,7 +88,15 @@ const link = () => {
         gitHubLink,
         waLink,
         emailLink,
-        cvLink
+        cvLink,
+        DTfigmaLink,
+        DTgithubLink,
+        SIFIRINGSgithubLink,
+        Multilanguage,
+        CravePizze,
+        NewsAPIGit,
+        SINANASCertif,
+        
     }
 }
 

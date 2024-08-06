@@ -45,7 +45,9 @@ export const Projects = () => {
               <TabPane eventKey={"mobile"}>
                 <div className="mx-4 flex gap-3">
                   <div className=" bg-[#252525] md:w-[250px] md:h-[550px] w-40 h-96 rounded-t-lg space-y-2 flex flex-col">
-                      <img src={DT} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      <a href={DT} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
+                        <img src={DT} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      </a>
                       <div className="pb-1 flex-grow">
                         <h4 className="md:text-[18px] text-[12px] space-y-1">Disease Tracker</h4>
                         <p className="md:text-[12px] text-[8px] flex justify-between p-1">Disease Tracker is an android application that aims to
@@ -71,7 +73,9 @@ export const Projects = () => {
               <TabPane eventKey={"web"}>
                 <div className="mx-4 flex gap-3">
                   <div className=" bg-[#252525] md:w-[250px] md:h-[500px] w-40 h-80 rounded-t-lg space-y-2 flex flex-col">
-                      <img src={CravePizza} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      <a href={CravePizza} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
+                        <img src={CravePizza} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      </a>
                       <div className="pb-2 flex-grow">
                         <h4 className="md:text-[18px] text-[12px] space-y-1">Crave Pizza</h4>
                         <p className="md:text-[12px] text-[8px] flex justify-between p-1">Pizza food marketplace and transactions between seller
@@ -87,7 +91,9 @@ export const Projects = () => {
                   </div>
 
                   <div className=" bg-[#252525] md:w-[250px] md:h-[500px] w-40 h-80 rounded-t-lg space-y-2 flex flex-col">
-                      <img src={MMImage} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      <a href={MMImage} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
+                        <img src={MMImage} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      </a>
                       <div className="pb-2 flex-grow">
                         <h4 className="md:text-[18px] text-[12px] space-y-1">Multilanguage and PDF Generator</h4>
                         <p className="md:text-[12px] text-[8px] flex justify-between p-1">Multilanguage and PDF Generator is a website to change
@@ -102,7 +108,9 @@ export const Projects = () => {
                   </div>
 
                   <div className=" bg-[#252525] md:w-[250px] md:h-[500px] w-40 h-80 rounded-t-lg space-y-2 flex flex-col">
-                      <img src={newsAPI} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      <a href={newsAPI} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
+                        <img src={newsAPI} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      </a>
                       <div className="pb-2 flex-grow">
                         <h4 className="md:text-[18px] text-[12px] space-y-1">News API Website</h4>
                         <p className="md:text-[12px] text-[8px] flex justify-between p-1">News API website is a website created to display news
@@ -122,7 +130,9 @@ export const Projects = () => {
               <TabPane eventKey={"software"}>
                 <div className="mx-4 flex gap-3">
                   <div className=" bg-[#252525] md:w-[250px] md:h-[550px] w-40 h-96 rounded-t-lg space-y-2 flex flex-col">
-                      <img src={Sinanas} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      <a href={Sinanas} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
+                        <img src={Sinanas} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      </a>
                       <div className="pb-1 flex-grow">
                         <h4 className="md:text-[18px] text-[12px] space-y-1">Sistem Informasi Administrasi Banjar Dinas
                         (SINANAS)</h4>
@@ -142,7 +152,9 @@ export const Projects = () => {
                   </div>
 
                   <div className=" bg-[#252525] md:w-[250px] md:h-[550px] w-40 h-96 rounded-t-lg space-y-2 flex flex-col">
-                      <img src={Sifirings} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      <a href={Sifirings} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
+                        <img src={Sifirings} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
+                      </a>
                       <div className="pb-1 flex-grow">
                         <h4 className="md:text-[18px] text-[12px] space-y-1">SIFIRINGS</h4>
                         <p className="md:text-[12px] text-[8px] flex justify-between p-1">SIFIRINGS is a system for tracking the location of

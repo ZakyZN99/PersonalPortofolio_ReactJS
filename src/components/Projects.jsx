@@ -43,7 +43,7 @@ export const Projects = () => {
             <TabContent>
               {/* MOBILE PROJECTS */}
               <TabPane eventKey={"mobile"}>
-                <div className="mx-4 flex gap-3">
+                <div className="mx-4 flex gap-3 justify-center">
                   <div className=" bg-[#252525] md:w-[250px] md:h-[550px] w-40 h-96 rounded-t-lg space-y-2 flex flex-col">
                       <a href={DT} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
                         <img src={DT} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
@@ -71,7 +71,7 @@ export const Projects = () => {
 
               {/* WEBSITE PROJECTS */}
               <TabPane eventKey={"web"}>
-                <div className="mx-4 flex gap-3">
+                <div className="mx-4 flex gap-3 justify-center">
                   <div className=" bg-[#252525] md:w-[250px] md:h-[500px] w-40 h-80 rounded-t-lg space-y-2 flex flex-col">
                       <a href={CravePizza} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
                         <img src={CravePizza} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />
@@ -128,7 +128,7 @@ export const Projects = () => {
 
               {/* SOFTWARE PROJECTS */}
               <TabPane eventKey={"software"}>
-                <div className="mx-4 flex gap-3">
+                <div className="mx-4 flex gap-3 justify-center">
                   <div className=" bg-[#252525] md:w-[250px] md:h-[550px] w-40 h-96 rounded-t-lg space-y-2 flex flex-col">
                       <a href={Sinanas} target="_blank" rel="noopener noreferrer" className=" cursor-pointer">
                         <img src={Sinanas} className=" object-fill rounded-t-lg w-full md:h-[200px] h-[100px]" />

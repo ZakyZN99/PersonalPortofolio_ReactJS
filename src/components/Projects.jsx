@@ -142,7 +142,7 @@ export const Projects = () => {
                           Sempidi area to facilitate data collection in his
                           neighbourhood.</p>
                         <p className="md:text-[12px] text-[8px] flex justify-between p-1">
-                          Tools: Flutter, Dart, Android Studio, MySQL, Figma
+                          Tools: Python, Visual Studio Code.
                         </p>
 
                       </div>
